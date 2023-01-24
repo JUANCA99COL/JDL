@@ -75,12 +75,8 @@ margin: 3%;
     margin-top: 10px;
 }
 
-.logo-ltd {
-    width: 15%;
-    height: auto;
-    cursor: pointer;
-    margin: 3px;
-    padding: 3px;
+.logo-jdl {
+    font-size: 26px;
 }
 
 .parent {
@@ -131,7 +127,6 @@ z-index: 20;
   position: relative;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
 }
@@ -189,7 +184,6 @@ padding: 20px;
 .nav a {
 text-decoration: none;
 color: black;
-font-size: 20px;
 }
 
 .child {
@@ -322,7 +316,7 @@ margin-bottom: -16px;
 
     .icon {
         position: absolute;
-        top: 4%;
+        top: 3.9%;
         left: 90%;
         display: block;
         visibility: visible;
@@ -482,10 +476,6 @@ margin-top: 70px;
 
 #CONTACT {
     height: 650px;
-}
-
-.logo-ltd {
-    width: 35%;
 }
 
 .carousel-caption h1 {
