@@ -74,11 +74,88 @@ text-decoration: none;
 margin-top: 10px;
 }
 
+.yellow {
+color: yellow;
+}
+
+.blue {
+color: blue;
+}
+
+.red {
+color: red;
+}
+/* hamburger  */
+
+.hamburger {
+/* position: relative; */
+margin: 0 auto;
+margin-top: 15px;
+width: 30px;
+height: 30px;
+position: absolute;
+top: 2%;
+right: 3%;
+cursor: pointer;
+}
+
+.hamburger .bar {
+padding: 0;
+width: 30px;
+height: 4px;
+background-color: black;
+display: block;
+border-radius: 4px;
+transition: all 0.4s ease-in-out;
+position: absolute; 
+}
+
+.bar1 {
+top: 0;
+}
+
+.bar2,
+.bar3 {
+top: 13.5px;
+}
+
+.bar3 {
+right: 0;
+}
+
+.bar4 {
+bottom: 0;
+}
+
+/* HAMBURGER 2 */
+.checkbox2:checked + label > .hamburger2 > .bar1{
+transform: translateX(40px);
+background-color: transparent;
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar2{
+transform: rotate(45deg);
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar3{
+transform: rotate(-45deg);
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar4{
+transform: translateX(-40px);
+background-color: transparent;
+}
+
+/* hamburger ends */
+
 .logo-jdl {
-width: 20%;
-height: auto;
-margin-top: -20px;
+background: url('../img/logo-duvan-final.jpg') no-repeat;
+background-size: contain; /* scales the image */
+background-position: center; /* centers the image */
+margin-top: -25px;
 margin-left: -10px;
+width:80px;
+height:80px;
 }
 
 .parent {
@@ -107,6 +184,7 @@ text-decoration: none;
 outline: none;
 }
 
+/* wasap icon */
 .sticky {
 position: fixed; 
 top: 87%;
@@ -125,6 +203,8 @@ transform: translateY(-10px);
 .icon {
 display: none;
 visibility: hidden;
+width: 30%;
+height: auto;
 }
 
 /* Style the navigation menu */
@@ -148,12 +228,10 @@ display: block;
 text-align: center;
 }
 
-/* Add a grey background color on mouse-over */
 .topnav a:hover {
-background-color: white;
-color: black;
-font-weight: bold;
+background: gray;
 }
+
 
 .h-title{
 margin-top: -40px;
@@ -186,12 +264,24 @@ font-weight: bold;
 }
 
 .nav {
+width: 105%;
 height: 100px;
 background: white;
 }
 
-.dis-menu a:hover {
-border-bottom: 3px solid black;
+.up {
+width: 10%;
+height: auto;
+border: 2px solid black;
+margin: 10px;
+padding: 10px;
+display: none;
+cursor: pointer;
+transition: transform 250ms;
+}
+
+.up:hover {
+transform: translateY(-10px);
 }
 
 .nav li {
@@ -310,15 +400,10 @@ width: 70%;
 height: 120px;
 }
 
-.send {
-margin-top: 60px;
-width: 120px;
-background: black;
-}
-
 .my-btn {
 width: 150px;
-background: black;
+background: blue;
+font-weight: bold;
 color: white;
 border-radius: 5px;
 outline: none;
@@ -326,9 +411,22 @@ padding: 10px;
 border: none;
 }
 
-.my-btn:hover {
-background: white;
-color: black;
+.my-btn-send {
+width: 150px;
+background: blue;
+font-weight: bold;
+color: white;
+border-radius: 5px;
+outline: none;
+padding: 5px;
+border: none;
+margin-top: 60px;   
+}
+
+.my-btn:hover, 
+.my-btn-send:hover {
+background: black;
+color: white;
 font-weight: bold;
 }
 
@@ -356,18 +454,8 @@ visibility: hidden;
 }
 
 .icon {
-position: absolute;
-top: 4%;
-left: 90%;
-width: 4%;
-height: auto;
 display: block;
 visibility: visible;
-}
-
-.fa-bars:before, .fa-navicon:before {
-content: "\f0c9";
-font-size: 38px;
 }
 }
 
@@ -399,22 +487,12 @@ margin-top: 40px;
 height: 716px;
 }
 
-
-.logo-jdl {
-margin-top: -7px;
-}
-
-.icon {
-top: 3%;
+.up {
+display: block;
 }
 
 .sticky {
 width: 10%;
-}
-
-.fa-bars:before, .fa-navicon:before {
-content: "\f0c9";
-font-size: 38px;
 }
 
 .sr-title {
@@ -466,7 +544,8 @@ margin-top: 5%;
 text-align: center;
 }
 
-.my-btn {
+.my-btn, 
+.my-btn2 {
 margin: auto;
 display: block;
 }
@@ -530,16 +609,6 @@ margin-top: 9px;
 height: 650px;
 }
 
-.icon {
-position: absolute;
-top: 4%;
-left: 85%;
-}
-
-.logo-jdl {
-width: 45%;
-}
-
 .carousel-caption h1 {
 font-size: 25px;
 }
@@ -556,11 +625,7 @@ height: 34px;
 .sticky {
 width: 13%;
 left: 80%;
-}
-
-.fa-bars:before, .fa-navicon:before {
-content: "\f0c9";
-font-size: 33px;
+top: 90%;
 }
 
 .arrow {
@@ -623,14 +688,14 @@ margin-top: 20px;
 }
 
 .circle {
-width: 70%;
+width: 90%;
 margin: auto;
 display: block;
 } 
 
 .headers {
 margin-left: 0;
-font-size: 20px;
+font-size: 14px;
 }
 
 .sr-title {
@@ -650,17 +715,43 @@ margin-top: -3px;
 .img-home-2 {
 margin-top: 60px;
 }
+
+.hamburger {
+position: absolute;
+right: 5%;
+top: 2.5%;
+}
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 280px) {
-.icon {
-position: absolute;
-top: 5%;
-left: 80%;
+.logo-jdl {
+margin-top: -27px;
+margin-left: -20px;
+width: 70px;
+height: 80px;
 }
 
-.logo-jdl {
-width: 100%;
+.hamburger {
+position: absolute;
+right: 9%;
+top: 3%;
+}
+
+.child {
+    margin-left: 65px;
+}
+
+.my-form {
+    width: 133%;
+    margin-left: -36px;
+}
+
+.my-btn-send{
+    width: 100%;
+}
+
+.up {
+    width: 13%;
 }
 }
