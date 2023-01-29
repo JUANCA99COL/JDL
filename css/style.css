@@ -53,11 +53,11 @@ margin: 10%;
 }
 
 #CONTACT {
-background-image: url("../img/dark-contact.png");
+background-image: url("../img/darky-contact.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
-height: 820px;
+height: 750px;
 padding: 10%;
 }
 
@@ -72,6 +72,82 @@ text-decoration: none;
 
 #SLIDESHOW {
 margin-top: 10px;
+}
+
+/* video css */
+#hero {
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+#hero::after {
+width: 100%;
+height: 100vh;
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+background:rgba(0,0,0,0.5);
+z-index: 10;
+}
+
+#hero video{
+width: 100%;
+height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 5;
+object-fit: cover;
+font-family: 'object-fit: cover';
+}
+
+#hero .caption {
+/* position: relative; */
+position: absolute;
+top: 48%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 18;
+text-align: center;
+color: white;
+}
+
+#hero .texture {
+width: 100%;
+height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 15;
+background: url("../texture.png");
+}
+
+#hero .caption h1 {
+text-transform: uppercase;
+margin-bottom: 0.5rem;
+font-size: 30px;
+}
+
+#hero .caption h2 {
+font-weight: 400;
+margin: 0;
+font-size: 30px;
+}
+
+.caption a, .middle-section a {
+text-decoration: none;
+}
+/* video css  end */
+
+.trans-log {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
 }
 
 .yellow {
@@ -149,12 +225,12 @@ background-color: transparent;
 /* hamburger ends */
 
 .logo-jdl {
-background: url('../img/logo-duvan-final.jpg') no-repeat;
+background: url('../img/duvan-desing-official.jpg') no-repeat;
 background-size: contain; /* scales the image */
 background-position: center; /* centers the image */
 margin-top: -25px;
 margin-left: -10px;
-width:80px;
+width:60px;
 height:80px;
 }
 
@@ -188,7 +264,7 @@ outline: none;
 .sticky {
 position: fixed; 
 top: 87%;
-left: 90%;
+left: 88%;
 cursor: pointer;
 width: 5%;
 height: auto;
@@ -487,8 +563,17 @@ margin-top: 40px;
 height: 716px;
 }
 
+#hero .caption h2 {
+font-size: 25px;
+}
+
+#hero .caption h1 {
+font-size: 25px;
+}
+
 .up {
 display: block;
+width: 15%;
 }
 
 .sticky {
@@ -577,6 +662,11 @@ margin-top: 20px;
 .doors {
 margin-top: 35px;
 }
+
+.trans-log {
+width: 45%;
+}
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -721,6 +811,22 @@ position: absolute;
 right: 5%;
 top: 2.5%;
 }
+
+.up {
+width: 10%;
+}
+
+#hero .caption h2 {
+font-size: 20px;
+}
+
+#hero .caption h1 {
+font-size: 20px;
+}
+
+.trans-log {
+width: 60%;
+}
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -728,7 +834,7 @@ top: 2.5%;
 .logo-jdl {
 margin-top: -27px;
 margin-left: -20px;
-width: 70px;
+width: 45px;
 height: 80px;
 }
 
@@ -739,19 +845,19 @@ top: 3%;
 }
 
 .child {
-    margin-left: 65px;
+margin-left: 65px;
 }
 
 .my-form {
-    width: 133%;
-    margin-left: -36px;
+width: 133%;
+margin-left: -36px;
 }
 
 .my-btn-send{
-    width: 100%;
+width: 100%;
 }
 
 .up {
-    width: 13%;
+width: 13%;
 }
 }

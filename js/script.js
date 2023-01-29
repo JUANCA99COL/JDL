@@ -7,3 +7,11 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+// jquery functions 
+// $(".topnav").hide();
+// $( document ).ready(function() {
+// $(".icon").click(function(){
+//     $(".topnav").slideToggle();
+// });
+// });
