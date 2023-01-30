@@ -8,10 +8,10 @@ function myFunction() {
   }
 }
 
-// jquery functions 
-// $(".topnav").hide();
-// $( document ).ready(function() {
-// $(".icon").click(function(){
-//     $(".topnav").slideToggle();
-// });
-// });
+//video fix //
+function videoFunction() {
+  var video = document.getElementsById("videoID");
+  video.setAttribute("playsinline", "");
+  video.setAttribute("muted", "");
+  video.play();
+}

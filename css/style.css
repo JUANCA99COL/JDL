@@ -274,7 +274,8 @@ height: auto;
 
 /* Style the navigation menu */
 .topnav {
-overflow: hidden;
+max-width: 100%;
+overflow-x: hidden;
 background-color: white;
 position: relative;
 }
