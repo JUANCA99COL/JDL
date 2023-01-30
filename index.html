@@ -77,13 +77,13 @@
     </div>
 <!-- video container  -->
 <div id="hero">
-    <video 
-      loop
-      muted
-      playsinline
-      autoplay
-      preload="auto"
-      >
+        <video 
+        [muted]="'muted'" 
+        autoplay="autoplay" 
+        loop="loop" 
+        playsinline
+        preload="auto"
+        >
       <source src="painting-video.mp4" type="video/mp4">
       <source src="painting-video.mov" type="video/mov">
       <source src="painting-video.webm" type="video/webm">
