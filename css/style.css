@@ -117,16 +117,6 @@ text-align: center;
 color: white;
 }
 
-#hero .texture {
-width: 100%;
-height: 100vh;
-position: absolute;
-top: 0;
-left: 0;
-z-index: 15;
-background: url("../texture.png");
-}
-
 #hero .caption h1 {
 text-transform: uppercase;
 margin-bottom: 0.5rem;
@@ -145,9 +135,9 @@ text-decoration: none;
 /* video css  end */
 
 .trans-log {
-    width: 20%;
-    padding: 10px;
-    margin: 10px;
+width: 20%;
+padding: 10px;
+margin: 10px;
 }
 
 .yellow {
@@ -164,14 +154,13 @@ color: red;
 /* hamburger  */
 
 .hamburger {
-/* position: relative; */
+position: absolute;
+top: 2%;
+right: 3%;
 margin: 0 auto;
 margin-top: 15px;
 width: 30px;
 height: 30px;
-position: absolute;
-top: 2%;
-right: 3%;
 cursor: pointer;
 }
 
@@ -229,7 +218,7 @@ background: url('../img/duvan-desing-official.jpg') no-repeat;
 background-size: contain; /* scales the image */
 background-position: center; /* centers the image */
 margin-top: -25px;
-margin-left: -10px;
+margin-left: -15px;
 width:60px;
 height:80px;
 }
@@ -286,7 +275,7 @@ height: auto;
 /* Style the navigation menu */
 .topnav {
 overflow: hidden;
-background-color: black;
+background-color: white;
 position: relative;
 }
 
@@ -296,7 +285,7 @@ display: none;
 
 /* Style navigation menu links */
 .topnav a {
-color: white;
+color: black;
 padding: 28px 30px;
 text-decoration: none;
 font-size: 17px;
@@ -305,9 +294,8 @@ text-align: center;
 }
 
 .topnav a:hover {
-background: gray;
+font-weight: bold;
 }
-
 
 .h-title{
 margin-top: -40px;
@@ -362,13 +350,16 @@ transform: translateY(-10px);
 
 .nav li {
 display: inline-block;
-font-weight: bold;
 padding: 20px;
 }
 
 .nav a {
 text-decoration: none;
 color: black;
+}
+
+.nav a:hover {
+    font-weight: bold;
 }
 
 .child {
@@ -827,9 +818,13 @@ font-size: 20px;
 .trans-log {
 width: 60%;
 }
+
+.topnav a {
+font-size: 20px;
+}
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 288px and down) */
 @media only screen and (max-width: 280px) {
 .logo-jdl {
 margin-top: -27px;
@@ -859,5 +854,13 @@ width: 100%;
 
 .up {
 width: 13%;
+}
+
+.topnav a {
+font-size: 15px;
+}
+
+.copyright {
+    font-size: 12px;
 }
 }
