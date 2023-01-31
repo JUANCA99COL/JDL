@@ -7,11 +7,3 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-
-//video fix //
-function videoFunction() {
-  var video = document.getElementsById("videoID");
-  video.setAttribute("playsinline", "");
-  video.setAttribute("muted", "");
-  video.play();
-}
