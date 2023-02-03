@@ -129,6 +129,32 @@ margin: 0;
 font-size: 30px;
 }
 
+/* automatic slideshow  */
+#slider {
+    opacity:1;
+    transition: opacity 1s; 
+    width: 100%;
+    height: 500px;
+    margin-top: 17px;
+}
+
+#slider.fadeOut {
+    opacity:0;
+}
+
+#slider2 {
+    opacity:1;
+    transition: opacity 1s; 
+    width: 100%;
+    height: 400px;
+    margin-top: 17px;
+}
+
+#slider2.fadeOut {
+    opacity:0;
+}
+/* end of slideshow  */
+
 .caption a, .middle-section a {
 text-decoration: none;
 }
@@ -319,7 +345,7 @@ position: relative;
 
 .carousel-caption {
 position: absolute;
-top: 55%;
+top: 49.9%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
@@ -396,17 +422,6 @@ font-size: 14px;
 
 .m-title {
 font-size: 18px;
-}
-
-.img-home {
-width: 100%;
-height: 500px;
-margin-top: 17px;
-}
-
-.img-home-2 {
-width: 100%;
-height: auto;
 }
 
 .gallery img {
@@ -528,6 +543,129 @@ visibility: visible;
 }
 
 /* MEDIA QUARIES  */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2200px) {
+
+#HOME, #ABOUT-US {
+    height: 950px;
+}  
+
+#slider, #slider2 {
+    margin-top: -65px;
+    height: 600px;
+}
+
+#REPAIRS-REPAINTS h1 {
+    font-size: 70px;
+}
+
+#CONTACT h1 {
+    font-size: 70px;
+    margin-top: -112px;
+}
+
+/* video css  */
+
+/* video css */
+#hero {
+    width: 100%;
+    height: 50vh;
+    }
+    
+    #hero::after {
+    width: 100%;
+    height: 50vh;
+    }
+    
+    #hero video{
+    width: 100%;
+    height: 50vh;
+    }
+
+/* video end  */
+
+.my-form {
+    width: 43%;
+}
+
+.headers {
+    font-size: 35px;
+}
+
+.sr-title {
+    font-size: 70px;
+}
+
+.carousel-caption h1 {
+    font-size: 70px;
+}
+
+.carousel-caption p {
+    font-size: 40px;
+}
+
+.serv-para {
+    font-size: 40px;
+}
+
+.m-title {
+    font-size: 25px;
+}
+
+.m-text {
+    font-size: 18px;
+}
+
+.ab-title {
+    margin-top: -107px;
+    margin-bottom: 20px;
+}
+
+.ab-title2 {
+    font-size: 30px;
+}
+
+.abt-cont {
+    padding: 3%;
+}
+
+.my-btn {
+width: 200px;
+height: 59px;
+margin-top: 20px;
+}
+
+.max-para {
+font-size: 30px;
+}
+
+.medal1 {
+    width: 8%;
+    left: -9%;
+    top: -4%;
+}
+
+.medal2 {
+    width: 8%;
+    left: 42%;
+    top: -4%;
+}
+
+.child {
+    margin-left: 60px;
+}
+
+.h-title {
+    margin-top: -155px;
+}
+
+.ab-title {
+    margin-top: -78px;
+}
+}
+
+
+
 /* (IPADS)  */
 @media only screen and (max-width: 830px) {
 #HOME {
@@ -602,21 +740,6 @@ font-size: 25px;
 font-size: 15px;
 }
 
-.img-home {
-height: auto;
-width: 75%;
-margin-left: 12%;
-margin-top: 17%;
-}
-
-.img-home-2 {
-width: 75%;
-height: auto;
-margin-left: 13%;
-margin-bottom: 5%;
-margin-top: 5%;
-}
-
 .h-title {
 text-align: center;
 }
@@ -646,7 +769,7 @@ left: -14%;
 margin-top: 33px;
 }
 
-.ab-title {
+.ab-title, .ab-title2 {
 text-align: center;
 margin-top: 20px;
 }
@@ -658,7 +781,6 @@ margin-top: 35px;
 .trans-log {
 width: 45%;
 }
-
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -689,6 +811,16 @@ margin-top: 9px;
 
 #CONTACT {
 height: 650px;
+}
+
+#slider {
+    height: auto;
+    margin-top: 45px;
+}
+
+#slider2 {
+    height: auto;
+    margin-top: 30px;
 }
 
 .carousel-caption h1 {
@@ -744,12 +876,6 @@ left: -19%;
 width: 20%;
 }
 
-.img-home {
-height: auto;
-margin-top: 50px;
-margin-left: 15%;
-}
-
 .h-title {
 text-align: center;
 margin-top: 20px;
@@ -764,7 +890,7 @@ display: block;
 margin-left: 105px;
 }
 
-.ab-title {
+.ab-title, .ab-title2 {
 text-align: center;
 margin-top: 20px;
 }
@@ -792,10 +918,6 @@ width: 100%;
 .socials {
 margin-bottom: 20px;
 margin-top: -3px;
-}
-
-.img-home-2 {
-margin-top: 60px;
 }
 
 .hamburger {
