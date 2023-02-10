@@ -129,6 +129,11 @@ margin: 0;
 font-size: 30px;
 }
 
+.caption a, .middle-section a {
+text-decoration: none;
+}
+/* video css  end */
+
 /* automatic slideshow  */
 #slider {
     opacity:1;
@@ -155,10 +160,9 @@ font-size: 30px;
 }
 /* end of slideshow  */
 
-.caption a, .middle-section a {
-text-decoration: none;
+.abt-cont {
+    padding: 2.5%;
 }
-/* video css  end */
 
 .trans-log {
 width: 20%;
