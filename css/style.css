@@ -136,32 +136,32 @@ text-decoration: none;
 
 /* automatic slideshow  */
 #slider {
-    opacity:1;
-    transition: opacity 1s; 
-    width: 100%;
-    height: 547px;
-    margin-top: 17px;
+opacity:1;
+transition: opacity 1s; 
+width: 100%;
+height: 547px;
+margin-top: 17px;
 }
 
 #slider.fadeOut {
-    opacity:0;
+opacity:0;
 }
 
 #slider2 {
-    opacity:1;
-    transition: opacity 1s; 
-    width: 100%;
-    height: 400px;
-    margin-top: 17px;
+opacity:1;
+transition: opacity 1s; 
+width: 100%;
+height: 400px;
+margin-top: 17px;
 }
 
 #slider2.fadeOut {
-    opacity:0;
+opacity:0;
 }
 /* end of slideshow  */
 
 .abt-cont {
-    padding: 2.5%;
+padding: 2.5%;
 }
 
 .trans-log {
@@ -390,7 +390,7 @@ color: black;
 }
 
 .nav a:hover {
-    font-weight: bold;
+font-weight: bold;
 }
 
 .child {
@@ -545,95 +545,95 @@ visibility: visible;
 @media only screen and (min-width: 2200px) {
 
 #HOME, #ABOUT-US {
-    height: 950px;
+height: 950px;
 }  
 
 #slider, #slider2 {
-    margin-top: -65px;
-    height: 600px;
+margin-top: -65px;
+height: 600px;
 }
 
 #REPAIRS-REPAINTS h1 {
-    font-size: 70px;
+font-size: 70px;
 }
 
 #CONTACT h1 {
-    font-size: 70px;
-    margin-top: -112px;
+font-size: 70px;
+margin-top: -112px;
 }
 
 /* video css  */
 
 /* video css */
 #hero {
-    width: 100%;
-    height: 80vh;
-    }
-    
-    #hero::after {
-    width: 100%;
-    height: 80vh;
-    }
-    
-    #hero video{
-    width: 100%;
-    height: 80vh;
-    }
+width: 100%;
+height: 80vh;
+}
+
+#hero::after {
+width: 100%;
+height: 80vh;
+}
+
+#hero video{
+width: 100%;
+height: 80vh;
+}
 
 /* video end  */
 
 .child {
-    margin-left: -40px;
+margin-left: -40px;
 }
 
 .col-6 {
-    flex: 0 0 auto;
-    width: 25%;
+flex: 0 0 auto;
+width: 25%;
 }
 
 .my-form {
-    width: 43%;
+width: 43%;
 }
 
 .headers {
-    font-size: 35px;
+font-size: 35px;
 }
 
 .sr-title {
-    font-size: 70px;
+font-size: 70px;
 }
 
 .carousel-caption h1 {
-    font-size: 70px;
+font-size: 70px;
 }
 
 .carousel-caption p {
-    font-size: 40px;
+font-size: 40px;
 }
 
 .serv-para {
-    font-size: 40px;
+font-size: 40px;
 }
 
 .m-title {
-    font-size: 25px;
+font-size: 25px;
 }
 
 .m-text {
-    font-size: 18px;
+font-size: 18px;
 }
 
 .ab-title {
-    margin-top: -107px;
-    margin-bottom: 20px;
+margin-top: -107px;
+margin-bottom: 20px;
 }
 
 .ab-title2 {
-    font-size: 30px;
+font-size: 30px;
 }
 
 .abt-cont {
-    padding: 3%;
+padding: 3%;
 }
 
 .my-btn {
@@ -647,11 +647,11 @@ font-size: 30px;
 }
 
 .h-title {
-    margin-top: -155px;
+margin-top: -155px;
 }
 
 .ab-title {
-    margin-top: -78px;
+margin-top: -78px;
 }
 }
 
@@ -660,7 +660,7 @@ font-size: 30px;
 /* (IPADS)  */
 @media only screen and (max-width: 830px) {
 #HOME {
-height: 1337px;
+height: auto;
 }
 
 #HOME h1 {
@@ -668,7 +668,7 @@ margin-top: 30px;
 }
 
 #ABOUT-US {
-height: 1000px;
+height: auto;
 }
 
 #REPAIRS-REPAINTS h1 {
@@ -681,7 +681,7 @@ margin-top: 40px;
 }
 
 #CONTACT {
-height: 716px;
+height: auto;
 }
 
 #hero .caption h2 {
@@ -752,7 +752,7 @@ font-size: 25px;
 }
 
 .m-text {
-    font-size: 20px;
+font-size: 20px;
 }
 
 .ab-title, .ab-title2 {
@@ -769,7 +769,7 @@ width: 45%;
 }
 
 #slider {
-    height: 400px
+height: 400px
 }
 }
 
@@ -777,14 +777,6 @@ width: 45%;
 @media only screen and (max-width: 600px) {
 p {
 font-size: 15px;
-}
-
-#HOME {
-height: 1200px;
-}
-
-#ABOUT-US {
-height: 800px;
 }
 
 #REPAIRS-REPAINTS h1 {
@@ -799,18 +791,14 @@ margin-top: 70px;
 margin-top: 9px;
 }
 
-#CONTACT {
-height: 650px;
-}
-
 #slider {
-    height: auto;
-    margin-top: -15px;
+height: auto;
+margin-top: -15px;
 }
 
 #slider2 {
-    height: auto;
-    margin-top: 30px;
+height: auto;
+margin-top: 30px;
 }
 
 .carousel-caption h1 {
@@ -917,6 +905,14 @@ width: 60%;
 .topnav a {
 font-size: 20px;
 }
+
+.m-title {
+font-size: 20px;
+}
+
+.m-text {
+font-size: 15px;
+}
 }
 
 /* Extra small devices (phones, 288px and down) */
@@ -933,10 +929,6 @@ position: absolute;
 right: 9%;
 top: 3%;
 }
-
-/* .child {
-margin-left: 65px;
-} */
 
 .my-form {
 width: 133%;
@@ -956,6 +948,6 @@ font-size: 15px;
 }
 
 .copyright {
-    font-size: 12px;
+font-size: 12px;
 }
 }
