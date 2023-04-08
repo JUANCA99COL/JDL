@@ -29,14 +29,15 @@
 <!-- own style  -->
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div id="top" class="row nav">
-        <ul class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+<body id="start">
+    <!-- nav  -->
+    <div class="nav">
+        <ul class="">
             <li class="m-3">
-                <div class="logo-jdl"></div>
+                <a href="#start"><div class="logo-jdl"></div></a>
             </li>
         </ul>
-        <ul class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <ul class="second-ul">
             <li class="dis-menu m-3">
                 <a href="#HOME">HOME</a>
             </li>
@@ -50,29 +51,18 @@
                 <a href="#ABOUT-US">ABOUT US</a>
             </li>
             <li class="m-2">
-                <div class="icon">
-                    <!-- Hamburger Menu -->
-                    <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden">
-                    <label for="checkbox2">
-                        <div href="javascript:void(0);" onclick="myFunction()" class="hamburger hamburger2">
-                            <span class="bar bar1"></span>
-                            <span class="bar bar2"></span>
-                            <span class="bar bar3"></span>
-                            <span class="bar bar4"></span>
-                        </div>
-                    </label>
-                </div>
+                <span class="menu-btn" onclick="openNav()">&#9776;</span>
             </li>
         </ul>
     </div> 
-    <div class="topnav">
-        <div id="myLinks">
-            <a href="#HOME">HOME</a>
-            <a href="#SERVICES">SERVICES</a>
-            <a href="#ABOUT-US">ABOUT US</a>
-            <a href="#CONTACT">CONTACT</a>
-        </div>
-    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#start">HOME</a>
+        <a href="#ABOUT-US">ABOUT</a>
+        <a href="#SERVICES">SERVICES</a>
+        <a href="#CONTACT">CONTACT</a>
+      </div>
+<!-- nav ends  -->
 <!-- video container  -->
 <div id="hero">
     <video playsinline autoplay loop muted>
@@ -186,29 +176,6 @@
         <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
             <img class="doors" src="img/cons-3.jpg" alt="">
         </div> 
-    </div>
-    <!-- new imgs  -->
-    <div class="row">    
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-            <img class="doors" src="img/cons-5.jpg" alt="">
-        </div>
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-            <img class="doors" src="img/cons-6.jpg" alt="">
-        </div>
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-            <img class="doors" src="img/cons-7.jpg" alt="">
-        </div> 
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-            <img class="doors" src="img/cons-8.jpg" alt="">
-        </div> 
-    </div>
-    <div class="row">    
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-            <img class="doors" src="img/cons-9.jpg" alt="">
-        </div>
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-            <img class="doors" src="img/cons-10.jpg" alt="">
-        </div>
     </div>
 </section>
 <section id="SLIDESHOW">
@@ -328,7 +295,7 @@
         </P>
     </div>
     <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-       <a href="#top"><img class="up" src="img/angle-up-solid.svg" alt=""></a>
+       <a href="#start"><img class="up" src="img/angle-up-solid.svg" alt=""></a>
     </div>
 </div>
 </section>

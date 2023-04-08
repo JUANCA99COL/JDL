@@ -1,20 +1,3 @@
-// $(".topnav").hide();
-// $( document ).ready(function() {
-// $(".icon").click(function(){
-//     $(".topnav").fadeToggle();
-// });
-// });
-
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
 // automatic slideshow 
 var imgArray = [
   'img/img-1.jpg',
@@ -57,3 +40,14 @@ var imgArray = [
         setTimeout(slideShow2, imgDuration);
     }
     slideShow2();
+
+
+    // SIDE NAV JS 
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
