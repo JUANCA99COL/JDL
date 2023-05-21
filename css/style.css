@@ -690,6 +690,11 @@ p {
         font-size: 25px;
     }
 
+    #SLIDESHOW {
+        display: none;
+        visibility: hidden;
+    }
+
     .up {
         display: block;
         width: 15%;
