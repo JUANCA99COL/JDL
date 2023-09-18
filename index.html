@@ -30,8 +30,18 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="start">
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
     <!-- nav  -->
-    <div class="nav">
+    <div class="nav" id="nav">
         <ul class="">
             <li class="m-3">
                 <a href="#start"><div class="logo-jdl"></div></a>
@@ -39,19 +49,19 @@
         </ul>
         <ul class="second-ul">
             <li class="dis-menu m-3">
-                <a href="#HOME">HOME</a>
+                <a id="dis-menu1" href="#HOME">HOME</a>
             </li>
             <li class="dis-menu m-3">
-                <a href="#SERVICES">SERVICES</a>
+                <a id="dis-menu2" href="#SERVICES">SERVICES</a>
             </li>
             <li class="dis-menu m-3">
-                <a href="#CONTACT">CONTACT</a>
+                <a id="dis-menu3" href="#CONTACT">CONTACT</a>
             </li>
             <li class="dis-menu m-3">
-                <a href="#ABOUT-US">ABOUT US</a>
+                <a id="dis-menu4" href="#ABOUT-US">ABOUT US</a>
             </li>
             <li class="m-2">
-                <span class="menu-btn" onclick="openNav()">&#9776;</span>
+                <span id="menu-btn" class="menu-btn" onclick="openNav()">&#9776;</span>
             </li>
         </ul>
     </div> 
@@ -98,12 +108,12 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
                 <h3 class="m-title text-center" >DURABILITY</h3>
                 <p class="m-text text-center">Exclusive 10 year <br> warranty</p>
-                <img class="medal1" src="img/medal-solid.svg" alt="">  
+                <i class="medal1 fa-solid fa-medal"></i>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
                 <h3 class="m-title text-center">QUALITY</h3>
                 <p class="m-text text-center">Great Service <br> Provided</p>
-                <img class="medal2" src="img/medal-solid.svg" alt="">  
+                <i class="medal2 fa-solid fa-medal"></i>
             </div>
         </div>
     </div>
@@ -223,19 +233,21 @@
     <h1 class="sr-title text-center">SERVICES</h1>
     <div class="row">
         <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-            <img class="circle" src="img/scissors.png" alt="">
+            <i class=" srv-icon fa-solid fa-paintbrush"></i>
             <h3 class="headers text-center">STRIPPING <br> SERVICES</h3>
         </div>
         <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-            <img class="circle" src="img/cr-water-blast.png" alt="">
+            <!-- <img class="circle" src="img/cr-water-blast.png" alt=""> -->
+            <i class="srv-icon fa-solid fa-paint-roller"></i>
             <h3 class="headers text-center">WATER <br> BLASTING</h3>
         </div>
         <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-            <img class="circle" src="img/paint.png" alt="">
+            <!-- <img class="circle" src="img/paint.png" alt=""> -->
+            <i class="srv-icon fa-solid fa-house"></i>
             <h3 class="headers text-center"> INTERIOR <br> AND EXTERIOR PAINTING</h3>
         </div>
         <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-            <img class="circle" src="img/cr-roof.png" alt="">
+            <i class="srv-icon fa-solid fa-people-roof"></i>
             <h3 class="headers text-center">ROOF PAINTING <br>
                 INTERIOR PLASTER
             </h3>
@@ -246,19 +258,24 @@
         <br><br>
         Whether you’re considering a new-build or a remodel to your existing home, Our team of experienced professionals can make your dream a reality. Our Company offers several services to help you achieve the look you want with your home.
     </p>
-    <a href="#CONTACT"><img class="arrow" src="img/chevron-down-solid.svg" alt=""></a>
+    <a href="#CONTACT">
+        <i id="arrow" class="arrow fa-solid fa-chevron-down"></i>
+    </a>
 </section>
 <section id="CONTACT">
     <h1 class="text-white text-center">CONTACT US</h1>  
         <form class="my-form p-5" action="https://formsubmit.co/info@jonodecorators.co.nz" method="POST">
             <div class="mb-5 frm-w">
+                <label for="">Name</label>
                 <input type="text" name="name" class="form-control" id="exampleInputEmail1"  placeholder="Name" aria-describedby="emailHelp">
             </div>
             <div class="mb-5 frm-w">
+                <label for="">Email</label>
                 <input name="email" type="email" class="form-control" id="exampleInputEmail1"  placeholder="email" aria-describedby="emailHelp" required>
             </div>
             <div class="mb-5 frm-w">
-                <textarea name="message" class="text-area form-control" id="validationTextarea" placeholder="Write a message" required></textarea>
+                <label for="">Write a message</label>
+                <textarea name="message" class="text-area form-control" id="validationTextarea" required></textarea>
             </div>
             <button type="submit" class="my-btn-send" value="Send Form">Send</button>
             <input type="hidden" name="_next" value="https://jonodecorators.co.nz/thank-you.html">
@@ -277,8 +294,12 @@
     <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <h5>SOCIALS</h5>
         <p>Follow us in our socials</p>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100090024270660"><img class="socials" src="img/facebook-brands.svg" alt="facebook"></a>
-        <a target="_blank" href="https://www.instagram.com/jonodecoratorsltd/"><img class="socials" src="img/instagram-brands.svg" alt="instagram"></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100090024270660">
+            <i class="socials fa-brands fa-facebook"></i>
+        </a>    
+        <a target="_blank" href="https://www.instagram.com/jonodecoratorsltd/">
+            <i style="color: red" class="socials fa-brands fa-instagram"></i>
+        </a>
     </div>
     <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <h5>LOCATION</h5>
@@ -295,7 +316,9 @@
         </P>
     </div>
     <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-       <a href="#start"><img class="up" src="img/angle-up-solid.svg" alt=""></a>
+        <a href="#start">
+            <i id="arrow2" class="up fa-solid fa-chevron-up"></i>
+        </a>
     </div>
 </div>
 </section>
