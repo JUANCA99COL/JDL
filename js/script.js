@@ -62,44 +62,28 @@ var imgArray = [
     const disMenu2 = document.getElementById('dis-menu2');
     const disMenu3= document.getElementById('dis-menu3');
     const disMenu4 = document.getElementById('dis-menu4');
-    // const disMenu = document.getElementsByClassName('dis-menu');
 
-   // Dark mode
-    function darkMode() {
-      nav.style.backgroundColor = 'black';
-      menuBtn.style.color = 'white';
-      arrow.style.color = 'white';
-      arrow2.style.color = 'white';
-      disMenu1.style.color = 'white';
-      disMenu2.style.color = 'white';
-      disMenu3.style.color = 'white';
-      disMenu4.style.color = 'white';
-      toggleIcon.children[0].classList.remove('fa-sun');
-      toggleIcon.children[0].classList.add('fa-moon');
-    }
-
-     // light mode
-     function lightMode() {
-      nav.style.backgroundColor = 'white';
-      menuBtn.style.color = 'black';
-      arrow.style.color = 'black';
-      arrow2.style.color = 'black';
-      disMenu1.style.color = 'black';
-      disMenu2.style.color = 'black';
-      disMenu3.style.color = 'black';
-      disMenu4.style.color = 'black';
-      toggleIcon.children[0].classList.remove('fa-moon');
-      toggleIcon.children[0].classList.add('fa-sun'); 
+    function toggleDarkLightMode(isDark) {
+      nav.style.backgroundColor = isDark ? 'black' : 'white';
+      menuBtn.style.color = isDark ? 'white' : 'black';
+      arrow.style.color = isDark ? 'white' : 'black';
+      arrow2.style.color = isDark ? 'white' : 'black';
+      disMenu1.style.color = isDark ? 'white' : 'black';
+      disMenu2.style.color = isDark ? 'white' : 'black';
+      disMenu3.style.color = isDark ? 'white' : 'black';
+      disMenu4.style.color = isDark ? 'white' : 'black';
+      isDark? toggleIcon.children[0].classList.replace('fa-sun', 'fa-moon') :
+      toggleIcon.children[0].classList.replace('fa-moon', 'fa-sun');
     }
 
     // switch theme dynamically
     function switchTheme(event){
       if (event.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        darkMode();
+        toggleDarkLightMode(true);
       } else {
         document.documentElement.setAttribute('data-theme', 'light');
-        lightMode();
+        toggleDarkLightMode(false);
       }
     }
 

@@ -118,6 +118,10 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
+    background-image: url("../img/ph-wp.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 #hero::after {
@@ -169,7 +173,6 @@ p {
 .middle-section a {
     text-decoration: none;
 }
-
 /* video css  end */
 
 /* automatic slideshow  */
@@ -689,8 +692,6 @@ p {
         margin-top: -112px;
     }
 
-    /* video css  */
-
     /* video css */
     #hero {
         width: 100%;
@@ -779,6 +780,10 @@ p {
 
     .ab-title {
         margin-top: -78px;
+    }
+
+    .srv-icon {
+        margin-left: 200px;
     }
 }
 
@@ -898,6 +903,11 @@ p {
 
     .srv-icon {
         margin-left: 23px;
+    }
+
+    video {
+        display: none;
+        visibility: hidden;
     }
 }
 
