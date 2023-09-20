@@ -22,6 +22,8 @@
 <title>Jono Decorators Limited</title>
 <!-- font awesome  -->
 <script src="https://kit.fontawesome.com/442c3c1532.js" crossorigin="anonymous"></script>
+<!-- animations css aos  -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- jquery  -->
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <!-- bootstrap  -->
@@ -83,15 +85,15 @@
       Your browser does not support the video tag.
     </video>
     <div class="caption">
-    <img class="trans-log" src="img/duvan-desing-official.jpg" alt="">
-      <h1 class="title-one">JONO DECORATORS LIMITED</h1>
-      <h2 class="text-center">Painting & Decorating</h2>
+    <img class="trans-log" data-aos="fade-down" src="img/duvan-desing-official.jpg" alt="">
+      <h1 class="title-one" data-aos="fade-down">JONO DECORATORS LIMITED</h1>
+      <h2 class="text-center" data-aos="fade-down">Painting & Decorating</h2>
     </div>
   </div>
 <!-- video ends  -->
 <section id="HOME">
 <div class="row">
-    <div class="abt-cont col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5">
+    <div data-aos="fade-right" class="abt-cont col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5">
         <h1 class="h-title">
             NEED TO PAINT AND
             <span class="blue">DECORATE?</span>
@@ -117,7 +119,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 id="slideshow">
+    <div data-aos="fade-left" data-aos-delay="1000" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 id="slideshow">
         <img id="slider" src="img/house-1.jpg" alt="" />
     </div>
     <a href="https://api.whatsapp.com/send?phone=640278836578">
@@ -127,10 +129,10 @@
 </section>
 <section id="ABOUT-US">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 id="slideshow">
+        <div data-aos="fade-right" data-aos-delay="1000" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 id="slideshow">
             <img id="slider2" src="img/house-2.jpg" alt="" />
         </div>
-        <div class="abt-cont col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-3 text-white">
+        <div data-aos="fade-left" class="abt-cont col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-3 text-white">
             <h1 class="ab-title">ABOUT US</h1>
             <h4 class="ab-title2">YOUR SATISFACTION IS OUR POLICY</h4>
             <p class="max-para ab-title mt-3">Jono Decorators Limited offers high quality residential 
@@ -144,8 +146,8 @@
     </div>
 </section>
 <section id="REPAIRS-REPAINTS">
-    <h1 class="r-title text-center">REPAIRS AND REPAINTS</h1>
-    <div class="row">    
+    <h1 data-aos="fade-down" class="r-title text-center">REPAIRS AND REPAINTS</h1>
+    <div data-aos="zoom-in" data-aos-delay="1000" class="row">    
         <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
             <img class="doors" src="img/white-1.jpg" alt="">
         </div>
@@ -159,7 +161,7 @@
             <img class="doors" src="img/cons-4.jpg" alt="">
         </div> 
     </div>
-    <div class="row">    
+    <div data-aos="zoom-in" data-aos-delay="1100" class="row">    
         <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
             <img class="doors" src="img/painting-1.jpg" alt="">
         </div>
@@ -173,7 +175,7 @@
             <img class="doors" src="img/cons-2.jpg" alt="">
         </div> 
     </div>
-    <div class="row">    
+    <div data-aos="zoom-in" data-aos-delay="1200" class="row">    
         <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
             <img class="doors" src="img/painting-4.jpg" alt="">
         </div>
@@ -230,23 +232,21 @@
       </div>
 </section>
 <section id="SERVICES">
-    <h1 class="sr-title text-center">SERVICES</h1>
+    <h1 data-aos-delay="1000" data-aos="fade-down" class="sr-title text-center">SERVICES</h1>
     <div class="row">
-        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <div data-aos="flip-left" data-aos-delay="1200" class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
             <i class=" srv-icon fa-solid fa-paintbrush"></i>
             <h3 class="headers text-center">STRIPPING <br> SERVICES</h3>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-            <!-- <img class="circle" src="img/cr-water-blast.png" alt=""> -->
+        <div data-aos="flip-left" data-aos-delay="1300" class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
             <i class="srv-icon fa-solid fa-paint-roller"></i>
             <h3 class="headers text-center">WATER <br> BLASTING</h3>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-            <!-- <img class="circle" src="img/paint.png" alt=""> -->
+        <div data-aos="flip-left" data-aos-delay="1400" class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
             <i class="srv-icon fa-solid fa-house"></i>
             <h3 class="headers text-center"> INTERIOR <br> AND EXTERIOR PAINTING</h3>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <div data-aos="flip-left" data-aos-delay="1500" class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
             <i class="srv-icon fa-solid fa-people-roof"></i>
             <h3 class="headers text-center">ROOF PAINTING <br>
                 INTERIOR PLASTER
@@ -325,6 +325,16 @@
 <div class="bg-dark text-white text-center py-5 copyright">
     © 2023 Jono Decorators Limited All Rights Reserved
 </div>
+<!-- animations aos js  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 1500, // values from 0 to 3000, with step 50ms
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+    });
+</script>
 <script
 src="https://code.jquery.com/jquery-3.5.1.min.js"
 integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
