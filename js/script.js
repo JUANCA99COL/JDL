@@ -1,10 +1,10 @@
 // automatic slideshow
 var imgArray = [
-    "img/img-1.jpg",
-    "img/img-2.jpg",
-    "img/img-3.jpg",
-    "img/img-4.jpg",
-    "img/img-slide-6.jpg",
+    "img/img-1-min.jpg",
+    "img/img-2-min.jpg",
+    "img/img-3-min.jpg",
+    "img/img-4-min.jpg",
+    "img/img-slide-6-min.jpg",
   ],
   curIndex = 0;
 imgDuration = 3000;
@@ -24,11 +24,11 @@ function slideShow() {
 slideShow();
 
 var imgArray2 = [
-    "img/img-slide-4.jpg",
-    "img/img-slide-5.jpg",
-    "img/img-slide-7.jpg",
-    "img/img-slide.jpg",
-    "img/img-slide-3.jpg",
+    "img/img-slide-4-min.jpg",
+    "img/img-slide-5-min.jpg",
+    "img/img-slide-7-min.jpg",
+    "img/img-slide-min.jpg",
+    "img/img-slide-3-min.jpg",
   ],
   curIndex = 0;
 imgDuration = 3000;

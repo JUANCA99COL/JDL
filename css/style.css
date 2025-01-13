@@ -76,7 +76,7 @@ p {
 }
 
 #ABOUT-US {
-    background-image: url("../img/dark-updt.png");
+    background-image: url("../img/dark-updt-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -89,7 +89,7 @@ p {
 }
 
 #CONTACT {
-    background-image: url("../img/darky-contact.png");
+    background-image: url("../img/dark-contact-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -282,7 +282,7 @@ p {
 }
 
 .logo-jdl {
-    background: url('../img/duvan-desing-official.jpg') no-repeat;
+    background: url('../img/duvan-desing-official-min.jpg') no-repeat;
     background-size: contain;
     /* scales the image */
     background-position: center;
@@ -812,7 +812,7 @@ input:checked+.slider::before {
     }
 
     #hero {
-        background-image: url("../img/ph-wp.jpeg");
+        background-image: url("../img/ph-wp-min.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
