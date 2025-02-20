@@ -61,7 +61,7 @@ p {
 }
 
 #HOME {
-    height: 800px;
+    height: 870px;
     padding: 10%;
     position: relative;
 }
@@ -671,7 +671,7 @@ input:checked+.slider::before {
 
     #HOME,
     #ABOUT-US {
-        height: 950px;
+        height: 990px;
     }
 
     #slider,
