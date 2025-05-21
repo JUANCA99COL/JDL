@@ -293,11 +293,12 @@ p {
     height: 80px;
 }
 
-.parent {
+.thank-you-parent {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: black;
 }
 
 .button-thanks {
@@ -307,11 +308,12 @@ p {
     height: 50px;
     border-radius: 5px;
     border: none;
+    background-color: blue;
+    color: white;
 }
 
 .button-thanks:hover {
     background: black;
-    color: white;
 }
 
 .parent a {
